@@ -1,0 +1,110 @@
+/* General body styles */
+body {
+  font-family: "Segoe UI", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #1f1c2c, #928dab);
+  color: #fff;
+}
+
+/* Container for login */
+.login-container {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 40px;
+  width: 350px;
+  margin: 100px auto;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.login-container h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #ffdd59;
+  animation: highlight 2s infinite alternate;
+}
+
+input {
+  width: 90%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: none;
+}
+
+button {
+  padding: 12px 20px;
+  margin-top: 10px;
+  border-radius: 8px;
+  border: none;
+  background: #ff6b6b;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #ff4757;
+}
+
+/* Highlight animation */
+@keyframes highlight {
+  0% {
+    color: #ffdd59;
+  }
+  50% {
+    color: #1dd1a1;
+  }
+  100% {
+    color: #ffdd59;
+  }
+}
+
+/* FadeIn animation */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Dashboard cards */
+.dashboard {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 25px;
+  margin: 15px;
+  width: 200px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+}
+
+.logout {
+  float: right;
+  margin: 20px;
+  padding: 10px 15px;
+  background: #ff4757;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
